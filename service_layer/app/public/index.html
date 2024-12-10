@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head>
+    <title>Country Economic Data</title>
+    <link type="text/css" rel="stylesheet" href="elegant-aero.css" />
+    <style>
+        body {
+            background-image: URL("AirLines-white.jpg");
+            background-repeat: no-repeat;
+            background-position: center top;
+            -webkit-background-size: 100%;
+            -moz-background-size: 100%;
+            -o-background-size: 100%;
+            background-size: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            width: 400px;
+            margin: 3cm auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-container select,
+        .form-container input[type="text"],
+        .form-container input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        iframe {
+            display: block;
+            width: 80%;
+            height: 300px;
+            margin: 2cm auto;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Country Economic Data</h2>
+    <form action="/delays.html" method="get" target="results_iframe">
+        <label for="country">Country:</label>
+        <select id="country" name="origin" required>
+            <option value="">-- Select a Country --</option>
+            <option value="AFG">Afghanistan</option>
+            <option value="ARG">Argentina</option>
+            <option value="ABW">Aruba</option>
+            <option value="AUS">Australia</option>
+            <option value="BLZ">Belize</option>
+            <option value="BRA">Brazil</option>
+            <option value="CAN">Canada</option>
+            <option value="CHN">China</option>
+            <option value="DNK">Denmark</option>
+            <option value="EGY">Egypt</option>
+            <option value="BEL">Belgium</option>
+            <option value="FRA">France</option>
+            <option value="DEU">Germany</option>
+            <option value="IND">India</option>
+            <option value="IDN">Indonesia</option>
+            <option value="ISR">Israel</option>
+            <option value="ITA">Italy</option>
+            <option value="JPN">Japan</option>
+            <option value="MYS">Malaysia</option>
+            <option value="NZL">New Zealand</option>
+            <option value="NOR">Norway</option>
+            <option value="PER">Peru</option>
+            <option value="PHL">Philippines</option>
+            <option value="ROU">Romania</option>
+            <option value="ZAF">South Africa</option>
+            <option value="ESP">Spain</option>
+            <option value="SWE">Sweden</option>
+            <option value="CHE">Switzerland</option>
+            <option value="THA">Thailand</option>
+            <option value="ARE">United Arab Emirates</option>
+            <option value="GBR">United Kingdom</option>
+            <option value="USA" selected>United States</option>
+            <option value="VNM">Vietnam</option>
+            <option value="ZMB">Zambia</option>
+            <option value="ZWE">Zimbabwe</option>
+        </select>
+
+        <label for="year">Year:</label>
+        <input type="text" id="year" name="year" value="2017" required />
+
+        <input type="submit" value="Submit" />
+    </form>
+</div>
+<iframe frameBorder="0" name="results_iframe"></iframe>
+</body>
+</html>
+

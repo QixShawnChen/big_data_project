@@ -1,0 +1,82 @@
+"NGDP_RPCH":"label":"Real GDP growth",
+"description":"Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at constant prices of final goods and services produced within a country during a specified time period, such as one year."
+
+"PCPIPCH":
+"label":"Inflation rate, average consumer prices",
+"description":"The average consumer price index (CPI) is a measure of a country's average level of prices based on the cost of a typical basket of consumer goods and services in a given period.
+
+"PPPPC":"label":"GDP per capita, current prices",
+"description":"Gross domestic product (GDP) is the most commonly used single measure of a country's overall economic activity.
+
+"PPPGDP":"label":"GDP, current prices",
+"description":"Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value in PPP terms of final goods and services produced within a country during a specified time period.
+
+"LP":"label":"Population",
+"description":"Total population of a country, region, or group of countries."
+
+"NGDPD":"label":"GDP, current prices",
+"description":"Gross domestic product is the most commonly used single measure of a country's overall economic activity. It represents the total value at current prices of final goods and services produced within a country during a specified time period, such as one year."
+
+"BCA":"label":"Current account balance\nU.S. dollars",
+"description":"The current account is the record of all transactions in the balance of payments covering the exports and imports of goods and services, payments of income, and current transfers between residents of a country and nonresidents."
+
+"LUR":"label":"Unemployment rate",
+"description":"The number of unemployed persons as a percentage of the total labor force."
+
+"rev":"label":"Government revenue, percent of GDP",
+"description":"Government revenue, percent of GDP"
+
+"GGXCNL_NGDP":"label":"General government net lending\/borrowing",
+"description":"Net lending (+)\/ borrowing (\u0096) is calculated as revenue minus total expenditure.
+
+
+https://www.imf.org/external/datamapper/api/v1/INDICATOR/NGDP_RPCH/USA
+
+
+Country Code List:
+Afghanistan: AFG
+Canada: CAN
+China: CHN
+Denmark: DNK
+Egypt: EGY
+Belgium: BEL
+France: FRA	
+Germany: DEU
+India: IND
+Indonesia: IDN
+Israel: ISR
+Italy: ITA
+Japan: JPN
+Malaysia: MYS
+Mexico: MEX
+New Zealand: NZL
+Norway: NOR
+Peru: PER
+Philippines (the): PHL
+Romania: ROU
+South Africa: ZAF
+Spain: ESP
+Sweden: SWE
+Switzerland: CHE
+Thailand: THA
+United Arab Emirates (the): ARE
+United Kingdom of Great Britain and Northern Ireland (the): GBR
+United States of America (the): USA
+Viet Nam: VNM
+Zambia: ZMB
+Zimbabwe: ZWE
+
+
+
+
+
+kafka-topics.sh --create --replication-factor 3 --partitions 1 --topic qixshawnchen_econ_data_final --bootstrap-server $KAFKABROKERS
+
+
+
+
+kafka-console-consumer.sh --bootstrap-server $KAFKABROKERS --topic qixshawnchen_econ_data_final --from-beginning
+
+
+
+

@@ -1,0 +1,71 @@
+.CSS_Table_Example {
+	margin: 20px auto; /* Center the table */
+	box-shadow: 10px 10px 5px #888888;
+	border: 1px solid #FFFFFF;
+	background-color: #FFFFFF;
+	border-radius: 9px; /* Apply rounded corners */
+	overflow: visible; /* Ensure no scrolling within the table container */
+}
+
+.CSS_Table_Example table {
+	width: auto; /* Allow table to grow naturally */
+	margin: 0px;
+	padding: 0px;
+	border-collapse: collapse; /* Remove gaps between table cells */
+}
+
+.CSS_Table_Example tr:last-child td:last-child {
+	border-bottom-right-radius: 9px;
+}
+
+.CSS_Table_Example table tr:first-child td:first-child {
+	border-top-left-radius: 9px;
+}
+
+.CSS_Table_Example table tr:first-child td:last-child {
+	border-top-right-radius: 9px;
+}
+
+.CSS_Table_Example tr:last-child td:first-child {
+	border-bottom-left-radius: 9px;
+}
+
+.CSS_Table_Example tr:hover td {
+	background-color: #82c0ff;
+	background: -webkit-linear-gradient(top, #82c0ff 5%, #56aaff 100%);
+	background: linear-gradient(to bottom, #82c0ff 5%, #56aaff 100%);
+}
+
+.CSS_Table_Example tr:first-child td {
+	background: -webkit-linear-gradient(top, #0069d3 5%, #007fff 100%);
+	background: linear-gradient(to bottom, #0069d3 5%, #007fff 100%);
+	color: #ffffff;
+	text-align: center;
+	font-size: 18px;
+	font-family: Comic Sans MS, sans-serif;
+	font-weight: bold;
+}
+
+.CSS_Table_Example td {
+	background: -webkit-linear-gradient(top, #56aaff 5%, #82c0ff 100%);
+	background: linear-gradient(to bottom, #56aaff 5%, #82c0ff 100%);
+	border: 1px solid #000000;
+	text-align: left;
+	padding: 7px;
+	font-size: 12px;
+	font-family: Comic Sans MS, sans-serif;
+	font-weight: bold;
+	color: #000000;
+}
+
+.CSS_Table_Example tr:last-child td {
+	border-width: 0px 1px 0px 0px;
+}
+
+.CSS_Table_Example tr td:last-child {
+	border-width: 0px 0px 1px 0px;
+}
+
+.CSS_Table_Example tr:last-child td:last-child {
+	border-width: 0px;
+}
